@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+
+
+<div class='container-fluid' id='section1'>
+  <img id='first_block' src="{% static 'img/canva-photo-editor.png' %}" style="height:900px;" alt="" >
+  <div class="text_block">
+    <h3>Hey, I am</h3>
+    <h1>Ji Qi</h1>
+    <h2>GeeChee</h2>
+    <h1>Click!</h1>
+
+    <a href="#section2">
+      <span id='button_to_s2'class="glyphicon glyphicon-collapse-down"  style="font-size:50px; color:white;"></span>
+    </a>
+
+  </div>
+</div>
+
+<!-- <div class="container-fluid" id='section2'> -->
+  <div class="container" id='section2'>
+    <hr>
+    <div class="row">
+      <div class="col-md-4 border-right" >
+        <a target="_blank" href="#">
+          <img id='web_icon'src="{% static 'icons/website-design-symbol.png' %}" alt="Web" width="120" height="120">
+        </a>
+        <div class="desc">
+          <h2>Web Developer</h2>
+          <div class="exp" >
+            <h3 style="margin-top:35px">HTML5/CSS3</h3>
+            <h3>JavaScript/JQuery</h3>
+            <h3>Back-End Language: Python/PHP/Java</h3>
+            <h3>Databases/Web Storage</h3>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-md-4 border-right" style="height:475px;">
+        <a target="_blank" href="#">
+          <img id='python_icon'src="{% static 'icons/icon.png' %}" alt="Python" width="120" height="120">
+        </a>
+        <div class="desc" >
+          <h2>Python Programmer</h2>
+          <div class="exp">
+            <h3 style="margin-top:50px">Pyrhon Programming</h3>
+            <h3>Django Framework</h3>
+          </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-4">
+      <a target="_blank" href="#">
+        <img id="ai_icon"src="{% static 'icons/artificial-intelligence.png' %}" alt="AI" width="120" height="120">
+      </a>
+      <div class="desc">
+        <h2>To Infinity and Beyond</h2>
+        <div class="exp">
+          <h3 style="margin-top:40px">Always love to learn new</h3>
+          <h3>Data Science</h3>
+          <h3>Machine learning</h3>
+          <h3>Artificial Intelligence</h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <hr>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+  <hr>
+  <div class="container">
+    <div class="row" style="margin-top:5%;">
+    <div class="col-sm-6 border-right" >
+      <div class="" style="text-align:center; margin-top:20%;height:450px; margin-left:35%;">
+        <h2>Get In Touch</h2>
+        <h3><span>Email:</span>qijiwind@gmail.com</h3>
+        <h3><span>Phone:</span>734-274-3199</h3>
+        <h3>Reach Me:</h3>
+        <h3>More on the bottom</h3>
+      </div>
+
+    </div>
+    <div class="col-sm-6" >
+
+
+  <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3" style="margin-left:50px;">
+          <form id="contact-form" class="form" action="#" method="POST" role="form">
+              <div class="form-group">
+                  <label class="form-label" for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
+              </div>
+              <div class="text-center">
+                  <button type="none" class="btn btn-start-order">Send Message</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+
+
+  <hr>
+
+
+{% endblock %}

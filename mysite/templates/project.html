@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="container" id='section3'>
+
+      <hr>
+      <h1 style="text-align:center;font-family: 'Montserrat', sans-serif;">Social Media Clone Project</h1>
+      <hr>
+      <a href="{% url 'coming' %}">
+        <img id='s2'src="{% static 'img/s1.png' %}" alt="" style="width:99%; opacity:0.9; border-radius:25px;">
+      </a>
+      <hr>
+      <div class="" style="font-family: 'Oxygen', sans-serif;">
+        <h3>Finished by django framework include multiple applications:
+        <h3><span class="glyphicon glyphicon-ok" aria-hidden="true" style="margin-right:20px;"></span>Post content</h3>
+        <h3><span class="glyphicon glyphicon-ok" aria-hidden="true" style="margin-right:20px;"></span>Comment other posts</h3>
+        <h3><span class="glyphicon glyphicon-ok" aria-hidden="true" style="margin-right:20px;"></span>Create a topic group</h3>
+        <h3><span class="glyphicon glyphicon-ok" aria-hidden="true" style="margin-right:20px;"></span>Post in groups(similar with tweet)</h3>
+        <div class="" >
+          <a href="{% url 'coming' %}" style="text-decoration: none;">
+            <h3 href="#"id='check_btn' style="margin-top:30px; padding-top:4px; padding-left: 8px; padding-right:0px; padding-bottom:10px; border:1px solid; width:27%; color:#404144;background-color:#f9fafc;">Click Here to View the App</h3>
+          </a>
+        </div>
+      </div>
+
+  </div>
+  <hr>
+
+
+{% endblock %}
